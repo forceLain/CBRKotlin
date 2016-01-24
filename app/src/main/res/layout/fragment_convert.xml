@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp"
+                tools:context="com.forcelain.android.startkotlin.ConvertFragment">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        tools:src="@drawable/flag_ad"/>
+
+    <EditText
+        android:id="@+id/convert_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="68dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/fromLabel"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/convert_from"
+        android:layout_alignTop="@id/convert_from"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="USD"/>
+
+    <EditText
+        android:id="@+id/converted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convert_from"
+        android:layout_marginLeft="68dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/convertedLabel"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/converted"
+        android:layout_alignTop="@id/converted"
+        android:layout_below="@id/fromLabel"
+        android:gravity="center"
+        android:text="₽"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
